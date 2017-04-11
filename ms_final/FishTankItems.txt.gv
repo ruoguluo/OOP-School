@@ -1,0 +1,22 @@
+digraph task {
+"Tank"->"SetupTank" [color=green];
+"Tank"->"RemoveTank" [color=red];
+"Gravel"->"AddGravel" [color=green];
+"Gravel"->"RemoveGravel" [color=red];
+"Filter"->"AssembleFilter" [color=green];
+"Filter"->"DisassembleFilter" [color=red];
+"Lighting"->"InstallLighting" [color=green];
+"Lighting"->"ReplaceLighting" [color=red];
+"Heater"->"AddHeater" [color=green];
+"Heater"->"RemoveHeater" [color=red];
+"Water"->"AddWater" [color=green];
+"Water"->"DrainWater" [color=red];
+"Rocks"->"AddRocks" [color=green];
+"Rocks"->"RemoveRocks" [color=red];
+"Fish"->"AddFish" [color=green];
+"Fish"->"CatchFish" [color=red];
+"Coral"->"AddCoral" [color=green];
+"Coral"->"RemoveCoral" [color=red];
+"Toys"->"AddToys" [color=green];
+"Toys"->"RemoveToys" [color=red];
+}
