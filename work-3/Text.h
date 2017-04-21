@@ -15,7 +15,7 @@ namespace w3 {
 		Text& operator=(const Text&); //assignment operator
 /*--------------------------------------------------------------------*/
 		Text(Text&&); //move constructor 
-		Text& operator=(Text&&); //move assignment operator
+		Text&& operator=(Text&&); //move assignment operator
 /*--------------------------------------------------------------------*/
 		~Text(); //destructor
 /*--------------------------------------------------------------------*/
