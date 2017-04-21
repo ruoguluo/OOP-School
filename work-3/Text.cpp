@@ -63,7 +63,7 @@ namespace w3 {
 		}
 	}//move constructor
 
-	Text& Text::operator=(Text&& other) {
+	Text&& Text::operator=(Text&& other) {
 		if (this != &other) {
 			if (table != nullptr) {
 				delete[] table;
@@ -74,7 +74,7 @@ namespace w3 {
 			other.count = 0;
 			other.table = nullptr;
 		}
-		return *this;
+		return std::move(*this);
 	}//move assignment operator
 
 	Text::~Text(){
